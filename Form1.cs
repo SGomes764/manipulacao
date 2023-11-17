@@ -22,10 +22,10 @@ namespace manipulacao
             Form2 form2 = new Form2();
             form2.ShowDialog();
             //ou
-            //form2.Show();*/
+            //form2.Show();
             //Form2 form2 = new Form2();
             //form2.MdiParent = this.ParentForm;
-           // form2.Show();
+            //form2.Show();
 
             this.label1.Text = form2.textBox1.Text;
             this.label2.Text = form2.textBox2.Text;
@@ -34,6 +34,12 @@ namespace manipulacao
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            label1.Text = "";
+            label2.Text = "";
         }
     }
 }
